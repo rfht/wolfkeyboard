@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flow</string>
+    <string name="recording">Recording...</string>
+    <string name="processing">Processing...</string>
+    <string name="voiceInput">Voice Input</string>
+    <string name="voiceNotSupported">This device does not support voice input.</string>
+    <string name="voiceNetworkError">Voice input requires a network connection.</string>
+    <string name="voiceError">An error occurred using voice input.</string>
+    <string name="addWord">Add Word</string>
+    <string name="confirmAddWord">Add the word \"%s\" to the user dictionary?</string>
+    <string name="wordAdded">\"%s\" added to dictionary</string>
+    <string name="confirmCapitalization">How should it be capitalized in the dictionary?</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="dictionaryDescription">Select the spelling dictionary to use</string>
+    <string name="preferences">Preferences</string>
+    <string-array name="dictionaryEntries">
+        <item>English (American)</item>
+        <item>English (British)</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Portuguese</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="dictionaryValues">
+        <item>american</item>
+        <item>british</item>
+        <item>french</item>
+        <item>german</item>
+        <item>portuguese</item>
+        <item>spanish</item>
+    </string-array>
+    <string name="userDictionary">User Dictionary</string>
+    <string name="userDictionaryDescription">Add words to the dictionary</string>
+    <string name="showPopup">Completion Popup</string>
+    <string name="showPopupDescription">Display the default completion as a popup over the keyboard</string>
+    <string name="popupDuration">Popup Duration</string>
+    <string name="popupDurationDescription">How long to display the completion popup</string>
+    <string name="longPressDelay">Long Press Delay</string>
+    <string name="longPressDelayDescription">How long to wait before interpreting a key press as a long press</string>
+    <string name="backspaceRate">Backspace Repeat Rate</string>
+    <string name="backspaceRateDescription">How quickly to delete while holding down the backspace key</string>
+    <string name="sizeAndPosition">Size and Position</string>
+    <string name="sizeAndPositionDescription">How the keyboard is positioned on the screen</string>
+    <string name="size">Size</string>
+    <string name="position">Position</string>
+    <string name="help">Help</string>
+    <string name="about">About Flow</string>
+    <string name="manual">Manual</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="aboutFlow">About Flow</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="leftArrow">\u2190</string>
+    <string name="rightArrow">\u2192</string>
+    <string name="upArrow">\u2191</string>
+    <string name="downArrow">\u2193</string>
+    <string name="copy">Copy</string>
+    <string name="cut">Cut</string>
+    <string name="paste">Paste</string>
+    <string name="clear">Clear</string>
+    <string name="clipboard">Clipboard</string>
+</resources>

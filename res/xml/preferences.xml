@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preferences">
+        <ListPreference
+            android:title="@string/dictionary"
+            android:summary="@string/dictionaryDescription"
+            android:key="dictionary"
+            android:defaultValue="american"
+            android:entries="@array/dictionaryEntries"
+            android:entryValues="@array/dictionaryValues" />
+        <Preference
+            android:title="@string/userDictionary"
+            android:summary="@string/userDictionaryDescription"
+            android:key="userDictionary" />
+        <CheckBoxPreference
+            android:title="@string/showPopup"
+            android:defaultValue="true"
+            android:summary="@string/showPopupDescription"
+            android:key="showPopup" />
+        <Preference
+            android:title="@string/popupDuration"
+            android:summary="@string/popupDurationDescription"
+            android:key="popupDuration" />
+        <Preference
+            android:title="@string/longPressDelay"
+            android:summary="@string/longPressDelayDescription"
+            android:key="longPressDelay" />
+        <Preference
+            android:title="@string/backspaceRate"
+            android:summary="@string/backspaceRateDescription"
+            android:key="backspaceRate" />
+        <Preference
+            android:title="@string/sizeAndPosition"
+            android:summary="@string/sizeAndPositionDescription"
+            android:key="keyboardSize" />
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="@string/help">
+        <Preference
+            android:title="@string/about"
+            android:key="about" />
+        <Preference
+            android:title="@string/manual"
+            android:key="manual" />
+        <Preference
+            android:title="@string/tutorial"
+            android:key="tutorial" />
+    </PreferenceCategory>
+</PreferenceScreen>

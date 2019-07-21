@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+              android:id="@+id/container">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/size"
+              android:layout_gravity="center_horizontal" android:textSize="20sp"
+              android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+    <SeekBar android:id="@+id/sizeSlider" android:layout_height="wrap_content" android:layout_width="fill_parent"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/position"
+            android:layout_marginTop="10sp" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+    <SeekBar android:id="@+id/positionSlider" android:layout_height="wrap_content" android:layout_width="100sp"
+             android:max="2" android:layout_gravity="center_horizontal"/>
+    <TextView android:layout_height="fill_parent" android:layout_width="fill_parent" android:text="" android:layout_weight="1"/>
+    <FrameLayout android:id="@+id/keyboardContainer" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="bottom"/>
+</LinearLayout>

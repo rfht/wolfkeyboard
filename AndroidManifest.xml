@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.enchantedcode.flow"
+      android:versionCode="28"
+      android:versionName="2.1.2">
+    <application android:label="Flow" android:icon="@drawable/icon">
+        <activity android:name=".SettingsActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AdjustSizeActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Manual"
+                  android:label="@string/manual"
+                  android:screenOrientation="portrait" />
+        <activity android:name=".Tutorial"
+                  android:label="@string/tutorial"
+                  android:screenOrientation="portrait" />
+        <activity android:name=".About"
+                  android:label="@string/aboutFlow"
+                  android:screenOrientation="portrait" />
+        <activity android:name=".Welcome"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".FlowInputMethod"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="14"/>
+</manifest>
