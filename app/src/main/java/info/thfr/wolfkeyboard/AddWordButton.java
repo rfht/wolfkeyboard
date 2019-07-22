@@ -2,6 +2,7 @@ package info.thfr.wolfkeyboard;
 
 /**
  * Copyright 2015 by Peter Eastman
+ * Copyright 2019    Thomas Frohwein <11335318+rfht@users.noreply.github.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
