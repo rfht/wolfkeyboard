@@ -1,4 +1,4 @@
-package com.enchantedcode.flow;
+package info.thfr.wolfkeyboard;
 
 /* Copyright (C) 2013-2015 by Peter Eastman
 

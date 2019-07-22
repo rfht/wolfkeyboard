@@ -1,4 +1,4 @@
-package com.rfht.wolfkeyboard;
+package info.thfr.wolfkeyboard;
 
 import org.junit.Test;
 

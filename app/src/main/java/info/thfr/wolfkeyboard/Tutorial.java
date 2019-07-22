@@ -1,4 +1,4 @@
-package com.enchantedcode.flow;
+package info.thfr.wolfkeyboard;
 
 /**
  * Copyright 2011-2013 by Peter Eastman
@@ -22,14 +22,14 @@ import android.graphics.*;
 import android.os.Bundle;
 import android.webkit.*;
 
-public class Manual extends Activity
+public class Tutorial extends Activity
 {
   public void onCreate(Bundle savedInstanceState)
   {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.web);
     WebView view = (WebView) findViewById(R.id.webView);
-    view.loadUrl("file:///android_asset/manual.html");
+    view.loadUrl("file:///android_asset/tutorial.html");
     view.setBackgroundColor(Color.BLACK);
   }
 }

@@ -1,7 +1,7 @@
-package com.enchantedcode.flow;
+package info.thfr.wolfkeyboard;
 
 /**
- * Copyright 2011-2015 by Peter Eastman
+ * Copyright 2011-2013 by Peter Eastman
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,25 +17,19 @@ package com.enchantedcode.flow;
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class TracedKey implements Comparable<TracedKey>
+import android.app.Activity;
+import android.graphics.*;
+import android.os.Bundle;
+import android.webkit.*;
+
+public class Manual extends Activity
 {
-  public int key;
-  public float nearestDistance;
-  public long nearestTime;
-
-  public TracedKey(int key, float initialDistance, long initialTime)
+  public void onCreate(Bundle savedInstanceState)
   {
-    this.key = key;
-    nearestDistance = initialDistance;
-    nearestTime = initialTime;
-  }
-
-  public int compareTo(TracedKey tracedKey)
-  {
-    if (nearestTime < tracedKey.nearestTime)
-      return -1;
-    if (nearestTime > tracedKey.nearestTime)
-      return 1;
-    return 0;
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.web);
+    WebView view = (WebView) findViewById(R.id.webView);
+    view.loadUrl("file:///android_asset/manual.html");
+    view.setBackgroundColor(Color.BLACK);
   }
 }
