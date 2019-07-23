@@ -5,8 +5,8 @@ A swipe-focused keyboard for Android. The main reason for existence is
 that it uses a non-QWERTY layout with the vowels in the center to
 provide better ergonomics for swipe input.
 
-This is a fork of [Peter Eastman's Flow Keyboard]
-(https://play.google.com/store/apps/details?id=com.enchantedcode.flow)
+This is a fork of
+[Peter Eastman's Flow Keyboard](https://play.google.com/store/apps/details?id=com.enchantedcode.flow)
 ([source](https://sourceforge.net/projects/flowkeyboard/)).
 
 New features:
