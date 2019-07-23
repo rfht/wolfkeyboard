@@ -33,6 +33,14 @@ public class Welcome extends Activity
     super.onCreate(savedInstanceState);
     setContentView(R.layout.web);
     WebView view = (WebView) findViewById(R.id.webView);
+    // stackoverflow.com/questions/7308904
+    view.setWebViewClient(new WebViewClient() {
+      @Override
+      public boolean shouldOverrideUrlLoading(WebView view1, WebResourceRequest request) {
+        view1.loadUrl(request.getUrl().toString());
+        return false;
+      }
+    });
     view.loadUrl("file:///android_asset/welcome.html");
     view.setBackgroundColor(Color.BLACK);
     WebSettings ws = view.getSettings();
@@ -51,19 +59,19 @@ public class Welcome extends Activity
         ((InputMethodManager) getSystemService(INPUT_METHOD_SERVICE)).showInputMethodPicker();
       }
     }, "select");
-    view.addJavascriptInterface(new Object()
-    {
-      public void performClick()
-      {
-        startActivity(new Intent(Welcome.this, Manual.class));
-      }
-    }, "manual");
-    view.addJavascriptInterface(new Object()
-    {
-      public void performClick()
-      {
-        startActivity(new Intent(Welcome.this, Tutorial.class));
-      }
-    }, "tutorial");
+//    view.addJavascriptInterface(new Object()
+//    {
+//      public void performClick()
+//      {
+//        startActivity(new Intent(Welcome.this, Manual.class));
+//      }
+//    }, "manual");
+//    view.addJavascriptInterface(new Object()
+//    {
+//      public void performClick()
+//      {
+//        startActivity(new Intent(Welcome.this, Tutorial.class));
+//      }
+//    }, "tutorial");
   }
 }
