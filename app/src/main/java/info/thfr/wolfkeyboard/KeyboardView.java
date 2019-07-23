@@ -451,7 +451,7 @@ public class KeyboardView extends View
     overlay = Bitmap.createBitmap(textWidth, textHeight, Bitmap.Config.ARGB_8888);
     Canvas canvas = new Canvas(overlay);
     canvas.drawRoundRect(new RectF(bounds), 0.5f*spacing, 0.5f*spacing, paint);
-    paint.setColor(Color.WHITE);
+    paint.setColor(Color.RED);
     if (word == NO_AUTO)
     {
       Matrix m = new Matrix();
@@ -561,7 +561,7 @@ public class KeyboardView extends View
     paint.setAntiAlias(true);
     if (trace != null)
     {
-      paint.setColor(Color.argb(192, 255, 255, 255));
+      paint.setColor(Color.argb(192, 255, 0, 0));
       paint.setStrokeWidth(3*getResources().getDisplayMetrics().density);
       Point prev = null;
       for (Point p : trace)
