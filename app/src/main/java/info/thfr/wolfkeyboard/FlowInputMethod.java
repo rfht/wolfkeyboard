@@ -1,6 +1,6 @@
 package info.thfr.wolfkeyboard;
 
-/**
+/*
  * Copyright 2011-2015 by Peter Eastman
  * Copyright 2019         Thomas Frohwein <11335318+rfht@users.noreply.github.com>
  *
@@ -43,11 +43,13 @@ public class FlowInputMethod extends InputMethodService
   private View extractView;
   private boolean simpleMode, temporarySimpleMode, passwordMode, pressedArrowKey;
   private int selectionStart, selectionEnd;
+  public Vibrator vibrator;
 
   @Override
   public void onCreate()
   {
     super.onCreate();
+    vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
     getContentResolver().registerContentObserver(UserDictionary.Words.CONTENT_URI, true, new ContentObserver(new Handler()) {
       @Override
       public void onChange(boolean selfChange)
@@ -177,6 +179,7 @@ public class FlowInputMethod extends InputMethodService
   @Override
   public void onUpdateSelection(int oldSelStart, int oldSelEnd, int newSelStart, int newSelEnd, int candidatesStart, int candidatesEnd)
   {
+    performVibration();
     super.onUpdateSelection(oldSelStart, oldSelEnd, newSelStart, newSelEnd, candidatesStart, candidatesEnd);
     if (touchListener == null)
       return;
@@ -311,5 +314,10 @@ public class FlowInputMethod extends InputMethodService
     window.setAttributes(lp);
     window.addFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
     dlg.show();
+  }
+
+  public void performVibration()
+  {
+    vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
   }
 }

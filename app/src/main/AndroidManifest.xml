@@ -41,6 +41,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
     <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <!-- rather set in defaultConfig in build.gradle?
         <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="14"/>
     -->
