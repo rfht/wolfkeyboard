@@ -45,12 +45,15 @@ public class KeyboardView extends View
   private final Handler handler;
   private boolean showOverlay;
   private long overlayTime;
+  /*
   private static final int vowelColor = Color.rgb(190, 255, 190);
   private static final int consonantColor = Color.rgb(190, 210, 255);
   private static final int punctuationColor = Color.rgb(200, 200, 200);
   private static final int numberColor = Color.rgb(255, 255, 255);
   private static final int controlColor = Color.rgb(255, 255, 190);
   private static final int emojiColor = Color.rgb(255, 255, 255);
+  */
+  private static final int vowelColor = consonantColor = punctuationColor = numberColor = controlColor = emojiColor = Color.rgb(255, 255, 255);
 
   public enum ModifierMode {UP, DOWN, LOCKED, EMOJI, EMOJI_LOCKED}
   public static final String AUTO = "AUTO";
@@ -230,7 +233,7 @@ public class KeyboardView extends View
     Bitmap background = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
     Canvas canvas = new Canvas(background);
     Paint backgroundPaint = new Paint();
-    backgroundPaint.setColor(Color.argb(180, 0, 0, 0));
+    backgroundPaint.setColor(Color.argb(180, 255, 255, 255));
     canvas.drawRect(0, 0, width, height, backgroundPaint);
     Paint keyPaint = new Paint();
     keyPaint.setAntiAlias(true);
