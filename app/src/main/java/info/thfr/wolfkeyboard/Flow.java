@@ -85,10 +85,11 @@ public class Flow
     alternates.put((int) 'T', new String[] {"™", "Þ"});
     alternates.put((int) 'd', new String[] {"ð"});
     alternates.put((int) 'D', new String[] {"Ð"});
+    alternates.put((int) '\'', new String[] {"`"});
     alternates.put((int) '$', new String[] {"€", "£", "¢", "¥"});
     alternates.put((int) '+', new String[] {"±"});
     alternates.put((int) '-', new String[] {"–", "_"});
-    alternates.put((int) '*', new String[] {"°", "^", "`", "‡", "†"});
+    alternates.put((int) '*', new String[] {"°", "^", "‡", "†"});
     alternates.put((int) '/', new String[] {"\\", "|", "÷"});
     alternates.put((int) '(', new String[] {"<", "[", "{", "≤", "«", " :-("});
     alternates.put((int) ')', new String[] {">", "]", "}", "≥", "»", " :-)"});

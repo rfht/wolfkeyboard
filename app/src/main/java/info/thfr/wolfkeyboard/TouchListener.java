@@ -1,6 +1,6 @@
 package info.thfr.wolfkeyboard;
 
-/**
+/*
  * Copyright 2011-2015 by Peter Eastman
  * Copyright 2019         Thomas Frohwein <11335318+rfht@users.noreply.github.com>
  *
@@ -125,7 +125,7 @@ public class TouchListener implements View.OnTouchListener
     isDeleting = false;
     dragInProgress = false;
   }
-  
+
   public boolean onTouch(View view, MotionEvent ev)
   {
     Point keyPositions[] = keyboardView.getKeyPositions();
