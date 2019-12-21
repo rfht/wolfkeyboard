@@ -230,7 +230,7 @@ public class KeyboardView extends View
     Bitmap background = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
     Canvas canvas = new Canvas(background);
     Paint backgroundPaint = new Paint();
-    backgroundPaint.setColor(Color.argb(180, 255, 255, 255));
+    backgroundPaint.setColor(Color.argb(255, 255, 255, 255));
     canvas.drawRect(0, 0, width, height, backgroundPaint);
     Paint keyPaint = new Paint();
     keyPaint.setAntiAlias(true);
@@ -561,7 +561,7 @@ public class KeyboardView extends View
     paint.setAntiAlias(true);
     if (trace != null)
     {
-      paint.setColor(Color.argb(192, 255, 0, 0));
+      paint.setColor(Color.argb(255, 255, 0, 0));
       paint.setStrokeWidth(3*getResources().getDisplayMetrics().density);
       Point prev = null;
       for (Point p : trace)
